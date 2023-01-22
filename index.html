@@ -13,38 +13,108 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-          tailwind.config = {
-            theme: {
-              extend: {
-                colors: {
-                  clifford: '#da373d',
-                  primary: '#FF8938',
-                }
-              }
-            }
-          }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              primary: "#FF8938",
+            },
+          },
+        },
+      };
     </script>
   </head>
   <body>
     <!-- header banner-->
     <header class="container mx-auto">
-      <div class="flex justify-center items-center">
-        <div class="space-y-7">
-          <h1 class="text-7xl font-semibold">It's good<br> 
-          tea time at The<br>Tea House</h1>
-          <p class="text-lg">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
-          <button class="flex items-center gap-3 py-4 px-5 bg-gradient-to-r from-[#FF8938] to-[#FF0000] text-white text-xl font-bold rounded-lg">
+      <div class="md:flex justify-center items-center">
+        <div class="space-y-7 p-16">
+          <h1 class="text-4xl md:text-7xl font-semibold">
+            It's good<br />
+            tea time at The<br />Tea House
+          </h1>
+          <p class="text-lg">
+            Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+            Your Taste Buds.
+          </p>
+          <button
+            class="flex items-center gap-3 py-4 px-5 bg-gradient-to-r from-[#FF8938] to-[#FF0000] text-white text-xl font-bold rounded-lg"
+          >
             <p>Explore More</p>
-            <img class="h-4" src="images/arrow.png" alt="">
+            <img class="h-4" src="images/arrow.png" alt="" />
           </button>
         </div>
         <div>
-          <img src="images/banner.png" alt="">
+          <img src="images/banner.png" alt="" />
         </div>
       </div>
     </header>
     <!-- main -->
-    <main class="container mx-auto"></main>
+    <main class="container mx-auto">
+      <!-- featured section -->
+      <section>
+        <div class="text-center space-y-4">
+          <h2 class="text-4xl font-bold">Our Featured Products</h2>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, <br />
+            by injected humour, or randomised words which don't look even
+            slightly believable.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4">
+          <div class="bg-[#F4F4F4] rounded-lg drop-shadow-xl p-4 m-4">
+            <div>
+              <img src="images/tea-1.png" alt="black-tea" />
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold">Milk Tea</h3>
+              <p>
+                Creamer could be replaced <br />
+                by fresh milk
+              </p>
+            </div>
+          </div>
+          <div class="bg-[#F4F4F4] rounded-lg drop-shadow-xl p-4 m-4">
+            <div>
+              <img src="images/tea-2.png" alt="black-tea" />
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold">Black Tea</h3>
+              <p>
+                Creamer could be replaced <br />
+                by fresh milk
+              </p>
+            </div>
+          </div>
+          <div class="bg-[#F4F4F4] rounded-lg drop-shadow-xl p-4 m-4">
+            <div>
+              <img src="images/tea-3.png" alt="lemon-tea" />
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold">Lemon Tea</h3>
+              <p>
+                Creamer could be replaced <br />
+                by fresh milk
+              </p>
+            </div>
+          </div>
+          <div class="bg-[#F4F4F4] rounded-lg drop-shadow-xl p-4 m-4">
+            <div>
+              <img src="images/tea-4.png" alt="green-tea" />
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold">Green Tea</h3>
+              <p>
+                Creamer could be replaced <br />
+                by fresh milk
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- footer -->
     <footer></footer>
   </body>
